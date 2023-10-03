@@ -9,6 +9,7 @@ const calc = window.document.getElementById("calc")
 const tPotencia = window.document.getElementById("tPotencia")
 const tRaiz = window.document.getElementById("tRaiz")
 const tBackSpace = window.document.getElementById("tBackSpace")
+const tPercentual = window.document.getElementById("tPercentual")
 
 let sinal = false
 let ponto = false
@@ -90,6 +91,13 @@ tPotencia.addEventListener("click", (evt) => {
 tRaiz.addEventListener("click", (evt) => {
     if(!resultado && display.innerHTML != "0" && !sinal){
         display.innerHTML += "**0.5"
+        ponto = false
+    }
+})
+
+tPercentual.addEventListener("click", (evt) => {
+    if(!resultado && display.innerHTML != "0" && !sinal){
+        display.innerHTML += "/100"
         ponto = false
     }
 })
