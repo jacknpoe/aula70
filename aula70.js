@@ -111,5 +111,6 @@ tBackSpace.addEventListener("click", (evt) => {
         ponto = false
         let tamanho = display.innerHTML.length
         display.innerHTML = display.innerHTML.substring(0, tamanho - 1)
+        if(display.innerHTML == "") display.innerHTML = "0"
     }
 })
