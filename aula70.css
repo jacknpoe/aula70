@@ -95,4 +95,19 @@
     cursor: pointer;
     border: 1px solid black;
 }
+@media (prefers-color-scheme: dark) { 
+  body{
+     color: #fff;
+     background-color: #111;
+  }
+    .calcPrincipal{
+        background-color: #222;
+    }  
+    .odisplay{
+    background-color: #464;
+    text-align: right;
+    padding: 5px;
+    font-family: monospace;
+    font-size: larger;
+    }
 }
