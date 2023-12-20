@@ -105,9 +105,5 @@
     }  
     .odisplay{
     background-color: #464;
-    text-align: right;
-    padding: 5px;
-    font-family: monospace;
-    font-size: larger;
     }
 }
